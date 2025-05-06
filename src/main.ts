@@ -5,7 +5,7 @@ import {AiEditor} from "./core/AiEditor.ts";
 // @ts-ignore
 window.aiEditor = new AiEditor({
     element: "#aiEditor",
-    placeholder: "点击输入内容1...",
+    placeholder: "点击输入内容...",
     contentRetention: true,
     // toolbarSize: 'small',
     // toolbarSize:'large',
@@ -82,9 +82,9 @@ window.aiEditor = new AiEditor({
     //     alert("保存")
     //     return true;
     // },
-    // image:{
-    //     uploadUrl:"http://localhost:8080/api/v1/aieditor/upload/image"
-    // },
+    image:{
+        uploadUrl:"http://localhost:8080/api/v1/aieditor/upload/image"
+    },
     ai: {
         models: {
             custom: {
